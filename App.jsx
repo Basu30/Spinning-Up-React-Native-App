@@ -13,7 +13,7 @@ import ToDoForm from './ToDoForm';
 import { SafeAreaView } from 'react-native';
 
 function App() {
-  const [tasks, setTasks] = useState(['Do laundry', 'Go to gym', 'Walk dog']);
+  const [tasks, setTasks] = React.useState(['Do laundry', 'Go to gym', 'Walk dog']);
   
   const handleChangeTask = (task) => {
     setTasks([...tasks, task]);
