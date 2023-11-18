@@ -12,16 +12,13 @@ import {
 
 
 function ToDoList({tasks}){
-  // if (!Array.isArray(tasks)) {
-  //   console.error("Tasks is not an array");
-  //   return null; // or handle the error in another way
-  // }
+ 
 
   return ( 
     <View>
       <Text>My To Do List</Text>
       <ScrollView>
-        {tasks.map(( task, index) => (
+        {tasks.map(( task, index ) => (
           <Text style={styles.task} key={index}>{task}</Text>
         ))}       
       {/* <Pressable>
